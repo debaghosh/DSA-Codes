@@ -10,8 +10,12 @@ public:
             
             if(target==nums[m]){return true;}
             
+            
+            /*how to work with duplicates*/
             while(nums[s]==nums[e] && s<=e){
-                if(s==e){return false;}
+                /*if 1 element in array, and did not                                                                satisfy 1st condition, not present*/
+                if(s==e){return false;} 
+                
                 if(target==nums[s]){return true;}
                 else{s++; e--;}
             }
